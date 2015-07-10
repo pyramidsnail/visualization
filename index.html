@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+</head>
+<body>
+<style>
+
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 960px;
+        height: 500px;
+        position: relative;
+    }
+
+    form {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+    }
+
+    path {
+        fill-rule: evenodd;
+        stroke: #333;
+        stroke-width: 2px;
+    }
+
+    .sun path {
+        fill: #6baed6;
+    }
+
+    .planet path {
+        fill: #9ecae1;
+    }
+
+    .annulus path {
+        fill: #c6dbef;
+    }
+
+</style>
+<form>
+    <input type="radio" name="reference" id="ref-annulus">
+    <label for="ref-annulus">Annulus</label><br>
+    <input type="radio" name="reference" id="ref-planet" checked>
+    <label for="ref-planet">Planets</label><br>
+    <input type="radio" name="reference" id="ref-sun">
+    <label for="ref-sun">Sun</label>
+</form>
+<script>
+    var width = 960,
+            height = 500,
+            radius = 80,
+            x = Math.sin(2*Math.PI/3),
+            y = Math.cos(2*Math.PI/3);
+
+    
+
+    </script>
+
+
+</body>
+</html>
